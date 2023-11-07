@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/nmp_logo_transparent_cropped.png"
+      sizes="300x300"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Plus+Jakarta+Sans&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>No Mercy Physique</title>
+  </head>
+  <body>
+    <section class="main_section" id="main_section">
+      <div class="main_container">
+        <%- include("partials/navbar", {background: "transparent"}); %>
+        <div class="center_container">
+          <div>
+            <div>
+              <h1 class="main_heading">No Mercy Physique</h1>
+              <h4 class="main_sub_heading">You better than you think.</h4>
+            </div>
+            <a href="#get_in_touch"
+              ><button class="main_button">GET IN TOUCH!</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services_section">
+      <div class="services_container">
+        <div>
+          <h1 class="services_title hidden">SERVICES WE OFFER</h1>
+          <div class="service_card_container">
+            <div class="service_card slideOut">
+              <div class="service_card_title_container">
+                <ion-icon
+                  class="service_card_icons"
+                  name="barbell-outline"
+                ></ion-icon>
+                <h1 class="service_card_title">Personal Training</h1>
+              </div>
+              <p class="service_card_content">
+                Personal trainers are responsible for educating clients and
+                enforcing policies regarding safe and proper use of equipment.
+                Individuals holding this position must be able to develop,
+                document, and implement one-on-one, partner, or group workout
+                programs that match the needs and goals of clients.
+              </p>
+            </div>
+            <div class="service_card slideOut">
+              <div class="service_card_title_container">
+                <ion-icon
+                  class="service_card_icons"
+                  name="body-outline"
+                ></ion-icon>
+                <h1 class="service_card_title">Weight Loss Diet</h1>
+              </div>
+              <p class="service_card_content">
+                Weight loss is a decrease in body weight by either following a
+                diet and exercise regime or because of involuntarily
+                circumstances such as illness.
+              </p>
+            </div>
+            <div class="service_card slideOut">
+              <div class="service_card_title_container">
+                <ion-icon
+                  class="service_card_icons"
+                  name="fast-food-outline"
+                ></ion-icon>
+                <h1 class="service_card_title">Nutrition Plans</h1>
+              </div>
+              <p class="service_card_content">
+                Nutritional plans are preferred for long-term weight loss
+                because they support focusing on habitually choosing
+                nutrient-rich foods and addressing supplemental health factors,
+                all designed to achieve sustained results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meet_section">
+      <div class="meet_container">
+        <h1 class="meet_title">Meet the <span class="strong">team.</span></h1>
+        <div class="meet_content_container">
+          <div class="left_person">
+            <div class="img_container">
+              <div class="img slideOut"></div>
+            </div>
+            <div>
+              <h2 class="person_name slideOut">Coach Caveman</h2>
+              <h6 class="real_name slideOut delay_1">Cavian Oliphant</h6>
+            </div>
+            <p class="person_details slideOut delay_2">
+              Personal trainer with years of experience in creating a new you.
+            </p>
+            <div class="social_icons slideOut delay_3">
+              <a href="https://www.facebook.com/cavian.oliphant"
+                ><ion-icon class="facebook" name="logo-facebook"></ion-icon
+              ></a>
+              <a href="https://www.instagram.com/coachcaveman/"
+                ><ion-icon class="instagram" name="logo-instagram"></ion-icon
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=0746080087&text=Hi there Cavian"
+                ><ion-icon class="whatsapp" name="logo-whatsapp"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="right_person">
+            <div class="img_container">
+              <div class="img slideOut"></div>
+            </div>
+            <div>
+              <h2 class="person_name slideOut">Coach Sherry</h2>
+              <h6 class="real_name slideOut delay_1">Sgherdeed Ross</h6>
+            </div>
+            <p class="person_details slideOut delay_2">
+              Personal trainer with years of experience in creating a new you.
+            </p>
+            <div class="social_icons slideOut delay_3">
+              <a href="https://www.facebook.com/sgherdeed.ross"
+                ><ion-icon class="facebook" name="logo-facebook"></ion-icon
+              ></a>
+              <a href="https://www.instagram.com/sgherdeed_ross/"
+                ><ion-icon class="instagram" name="logo-instagram"></ion-icon
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=0653129139&text=Hi there Sgherdeed"
+                ><ion-icon class="whatsapp" name="logo-whatsapp"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="our_work_title hidden">Our Work</h1>
+      <div class="our_work_container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container slideOut delay_1">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="carousel_container">
+              <div class="carousel_content_container">
+                <div class="transformation_img_container">
+                  <img
+                    class="transformation_image"
+                    src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/before-after-body-building-fitness-transformation-46-59156030768c6__700.jpg"
+                  />
+                </div>
+                <div class="carousel_content">
+                  <h1>TRANSFORMATION</h1>
+                  <p class="hidden delay_2">
+                    Here at Bored Panda, we decided to compile a list of people
+                    who bulked up big-time and barely look like the same people
+                    in their 'before' photos, from women fitness maniacs to guys
+                    who have managed to get ripped using no exercise equipment
+                    at all. We've also included the timespan of their progress,
+                    but keep in mind that everyone builds at a different pace!
+                  </p>
+                  <h1>- John Doe</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carousel_container">
+              <div class="carousel_content_container">
+                <div>
+                  <img
+                    class="transformation_image"
+                    src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/before-after-body-building-fitness-transformation-11-5912f80003493__700.jpg"
+                  />
+                </div>
+                <div class="carousel_content">
+                  <!-- <img class="nmp_logo" src="../images/NMP transparent.png" /> -->
+                  <h1>TRANSFORMATION</h1>
+                  <p>
+                    Here at Bored Panda, we decided to compile a list of people
+                    who bulked up big-time and barely look like the same people
+                    in their 'before' photos, from women fitness maniacs to guys
+                    who have managed to get ripped using no exercise equipment
+                    at all. We've also included the timespan of their progress,
+                    but keep in mind that everyone builds at a different pace!
+                  </p>
+                  <h1>- John Doe</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="carousel_container">
+              <div class="carousel_content_container">
+                <div>
+                  <img
+                    class="transformation_image"
+                    src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/before-after-body-building-fitness-transformation-51-591571ea19812__700.jpg"
+                  />
+                </div>
+                <div class="carousel_content">
+                  <h1>TRANSFORMATION</h1>
+                  <p>
+                    Here at Bored Panda, we decided to compile a list of people
+                    who bulked up big-time and barely look like the same people
+                    in their 'before' photos, from women fitness maniacs to guys
+                    who have managed to get ripped using no exercise equipment
+                    at all. We've also included the timespan of their progress,
+                    but keep in mind that everyone builds at a different pace!
+                  </p>
+                  <h1>- John Doe</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="testimonials_container">
+        <h1 class="our_work_title hidden">What People Say</h1>
+
+        <div class="our_work_container">
+          <!-- Slideshow container -->
+          <div class="slideshow-container slideOut delay_1">
+            <!-- Full-width images with number and caption text -->
+            <div class="testimonialsSlides fade">
+              <div class="testimonials_carousel_container">
+                <div class="carousel_content_container">
+                  <div class="testimonialsCarousel carousel_content">
+                    <h1>TESTIMONIALS</h1>
+                    <p class="hidden delay_2">
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- John Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonialsSlides fade">
+              <div class="carousel_container">
+                <div class="carousel_content_container">
+                  <div class="carousel_content">
+                    <!-- <img class="nmp_logo" src="../images/NMP transparent.png" /> -->
+                    <h1>TESTIMONIALS</h1>
+                    <p>
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- Johnny Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonialsSlides fade">
+              <div class="carousel_container">
+                <div class="carousel_content_container">
+                  <div class="carousel_content">
+                    <h1>TESTIMONIALS</h1>
+                    <p>
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- Jane Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="testimonialsPlusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="testimonialsPlusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="get_in_touch">
+      <div class="contact_container">
+        <div class="contact_content_container">
+          <div class="left_section">
+            <h1 class="hidden">Get in touch</h1>
+            <p class="hidden delay_2">
+              We will get in contact with you. One of the Coaches will call or
+              email you with the relavant information how to move forward.
+            </p>
+            <div class="contacts_container hidden delay_3">
+              <div class="contacts">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>011 234 2349</p>
+              </div>
+              <div class="contacts">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>nomercyphysique@gmail.com</p>
+              </div>
+              <div class="contacts">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>12 Market street, Boksburg</p>
+              </div>
+            </div>
+          </div>
+          <div class="right_section">
+            <form method="POST" action="/sent-message">
+              <input
+                name="name"
+                required
+                class="item item1"
+                placeholder="Whats your name"
+              />
+              <input
+                name="email"
+                class="item item2"
+                type="text"
+                placeholder="What's your email"
+              />
+              <input
+                name="phone"
+                class="item item3"
+                type="text"
+                required
+                placeholder="Cell or whatsapp number"
+              />
+              <textarea
+                name="message"
+                class="item item4"
+                placeholder="Any message...like your goal or more information"
+              ></textarea>
+              <button type="submit" class="send_button hidden delay_4">
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about_container">
+        <div class="about_content">
+          <h1>ABOUT US</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. <br />
+            <a href="/about" class="more_about_nmp"
+              >More about No Mercy Physique ></a
+            >
+          </p>
+
+          <div class="social_icons slideOut delay_3">
+            <a href="https://www.instagram.com/nomercyphysique_nmp/"
+              ><ion-icon
+                class="nmp_instagram_icon instagram"
+                name="logo-instagram"
+              ></ion-icon
+            ></a>
+          </div>
+          <div class="about_terms">
+            <p>Copyright No Mercy Physique.</p>
+            <p>All rights reserved.</p>
+            <p>
+              Web App by:
+              <a href="https://jerrellabrahams.tech">Jerrell Abrahams</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // let slideIndex = 0;
+      // showSlides();
+
+      // function showSlides() {
+      //   let i;
+      //   let slides = document.getElementsByClassName("mySlides");
+      //   for (i = 0; i < slides.length; i++) {
+      //     slides[i].style.display = "none";
+      //   }
+      //   slideIndex++;
+      //   if (slideIndex > slides.length) {
+      //     slideIndex = 1;
+      //   }
+      //   slides[slideIndex - 1].style.display = "block";
+      //   setTimeout(showSlides, 2000); // Change image every 2 seconds
+      // }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      let testimonialSlideIndex = 1;
+      testimonailsShowSlides(testimonialSlideIndex);
+
+      function testimonialsPlusSlides(n) {
+        testimonailsShowSlides((testimonialSlideIndex += n));
+      }
+
+      function testimonialsCurrentSlide(n) {
+        testimonailsShowSlides((testimonialSlideIndex = n));
+      }
+
+      function testimonailsShowSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("testimonialsSlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          testimonialSlideIndex = 1;
+        }
+        if (n < 1) {
+          testimonialSlideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[testimonialSlideIndex - 1].style.display = "block";
+        dots[testimonialSlideIndex - 1].className += " active";
+      }
+    </script>
+
+    <script defer src="../javascript/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

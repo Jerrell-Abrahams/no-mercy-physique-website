@@ -1,0 +1,1130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-size: 63.3%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* ##################################################### MAIN SECTION ##################################################### */
+
+.main_section {
+  width: 100%;
+  height: max-content;
+}
+
+.invisible {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  background-color: black;
+  z-index: 9;
+  border-radius: 0;
+  box-shadow: 4px 4px 10px black;
+}
+
+.burger_links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.burger_links a {
+  border: 1px black solid;
+  font-family: "Arial";
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px rgb(24, 23, 23) solid;
+}
+
+.main_container {
+  color: white;
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/pexels-scott-webb-136410.jpg"), no-repeat;
+  background-position: 0px -100px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.blackground {
+  background-color: black;
+  color: white;
+}
+
+.logo_container img {
+  width: 11rem;
+  height: 8rem;
+  margin: 1rem;
+}
+
+.nav_links {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.6rem;
+  margin: 0 5rem;
+  color: white;
+}
+
+.burger_button {
+  display: none;
+  margin: 0 1em;
+  font-size: 4rem;
+  text-align: center;
+  height: auto;
+}
+.burger_button_icon {
+  color: white;
+  align-items: center;
+}
+
+.nav_button {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+/* .nav_button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+.nav_button:hover {
+  cursor: pointer;
+  color: #38d42f;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.nav_button_join {
+  border: 2px solid #38d42f;
+  padding: 0.5rem 2rem;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+.nav_button_join:hover {
+  background-color: #38d42f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shop_button::after {
+  content: "coming soon";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  font-size: 0.7rem;
+  color: orange;
+}
+
+.center_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+  -webkit-box-reflect: below -60px linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  animation: pop 1.5s;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    filter: blur(50px);
+  }
+
+  50% {
+    transform: scale(2);
+    fliter: blur(30px);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+.main_sub_heading {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  animation: afterimage 2s;
+}
+
+@keyframes afterimage {
+  0% {
+    transform: translateY(300%);
+    filter: blur(50px);
+  }
+
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.main_button {
+  width: 25%;
+  height: fit-content;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  background-color: #38d42f;
+  background-size: 200% auto;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1.2rem 0;
+  border-radius: 2px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  transition: 0.5s;
+  animation: afterimage 2s;
+}
+
+.main_button:hover {
+  background-position: center;
+  transform: translateY(1.6px);
+  cursor: pointer;
+  box-shadow: #38d42f 10px 10px 100px;
+}
+
+/* ##################################################### SERVICES SECTION ##################################################### */
+
+.services_title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Montserrat";
+  font-weight: 100;
+  padding: 7rem 0;
+}
+
+.services_container {
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(to bottom, rgb(215, 215, 215) 40%, black); */
+  background-color: whitesmoke;
+  padding-bottom: 5rem;
+}
+
+.service_card_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.service_card {
+  border: none;
+  /* background-image: linear-gradient(
+    to right bottom,
+    rgb(94, 94, 94) 1%,
+    #000000
+  ); */
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(228, 228, 228) 4%,
+    #c7c7c7
+  );
+
+  width: 30%;
+
+  border-radius: 3px;
+  color: black;
+
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.service_card_title_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  margin: 1rem 1rem;
+  padding: 1rem;
+}
+
+.service_card_icons {
+  font-size: 7rem;
+  color: #38d42f;
+}
+
+.service_card_title {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+.service_card_content {
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  font-family: "Plus Jakarta Sans";
+}
+
+/* ##################################################### MEET THE TEAM SECTION ##################################################### */
+
+.meet_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+
+.meet_title {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  padding: 4rem 0;
+}
+
+.strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.meet_content_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left_person .img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin: 2rem auto;
+  background-image: url("https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 6px 0px 77px 20px rgba(200, 200, 200, 0.13),
+    0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+}
+
+.right_person .img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin: 2rem auto;
+  background-image: url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 6px 0px 77px 20px rgba(200, 200, 200, 0.13),
+    0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+}
+
+.left_person,
+.right_person {
+  width: 50%;
+  height: auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.img_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.person_name {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-family: "Montserrat";
+  margin: 1rem 0;
+}
+
+.real_name {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 100;
+  font-style: italic;
+}
+
+.person_details {
+  font-size: 1.4rem;
+  font-family: "Plus Jakarta Sans";
+}
+
+.social_icons {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.social_icons ion-icon {
+  margin: 0 1rem;
+  color: white;
+}
+
+.facebook:hover {
+  color: #234fa5;
+  cursor: pointer;
+}
+.instagram:hover {
+  color: #ba2e35;
+  cursor: pointer;
+}
+.whatsapp:hover {
+  color: #3dbb2c;
+  cursor: pointer;
+}
+
+/* ##################################################### BEFORE/AFTERS SECTION ##################################################### */
+
+.our_work_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.our_work_title {
+  text-align: center;
+  font-size: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  padding: 4rem 0;
+}
+
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.332);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+  cursor: pointer;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel_container {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+}
+
+.transformation_image {
+  width: 30rem;
+  height: 30rem;
+}
+
+.carousel_content_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.carousel_content {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .nmp_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+} */
+
+.carousel_content p {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  font-size: 1.6rem;
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.7rem;
+}
+
+.carousel_content h1 {
+  font-size: 2rem;
+  font-family: "Ubuntu";
+}
+
+.testimonials_container {
+  background-color: whitesmoke;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.testimonialsCarousel {
+  background-color: whitesmoke;
+}
+
+/* ##################################################### GET IN TOUCH SECTION ##################################################### */
+
+.contact_container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0 6rem 0;
+}
+
+.contact_content_container {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+.left_section h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.contacts_container {
+  margin: 2rem 0rem;
+}
+.contacts {
+  font-size: 2.2rem;
+  display: flex;
+  gap: 1rem;
+  font-family: "Ubuntu";
+}
+
+.contacts ion-icon {
+  color: #38d42f;
+}
+
+.left_section p {
+  width: 70%;
+  font-size: 1.4rem;
+  font-family: "ubuntu";
+}
+
+.left_section {
+  width: 35%;
+}
+
+.right_section .left_section p {
+  font-size: 1.5rem;
+  font-family: "Ubuntu";
+  width: 70%;
+}
+
+.right_section {
+  width: 60%;
+}
+
+.item {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.item1,
+.item2,
+.item3 {
+  width: calc(99% / 3);
+  flex-flow: column;
+  flex-wrap: wrap;
+  padding: 1.3rem 1rem;
+}
+
+.item4 {
+  display: block;
+  width: 100%;
+  height: 70%;
+  text-align: bottom;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.send_button {
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #38d42f;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.send_button:hover {
+  transform: translate(2px, -2px);
+  box-shadow: #38d42f 10px 10px 100px;
+  cursor: pointer;
+}
+
+/* ##################################################### ANIMATION ##################################################### */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.slideOut {
+  filter: blur(15px);
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.slideIn {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay_1 {
+  transition-delay: 400ms;
+}
+
+.delay_2 {
+  transition-delay: 600ms;
+}
+
+.delay_3 {
+  transition-delay: 800ms;
+}
+
+.delay_4 {
+  transition-delay: 1000ms;
+}
+
+/* #################################################################### ABOUT PAGE ############################################################# */
+
+.about_container {
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_container h1 {
+  font-size: 5rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 2rem auto;
+}
+
+.about_container p {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 2rem;
+  width: 70%;
+}
+
+.about_terms {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.about_terms p {
+  font-size: 1rem;
+  font-family: "Ubuntu";
+}
+
+.about_terms a {
+  text-decoration: none;
+  color: black;
+}
+
+.about_terms a:hover {
+  color: rgb(81, 81, 152);
+  cursor: pointer;
+}
+
+.more_about_nmp {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.nmp_instagram_icon {
+  color: black !important;
+}
+.nmp_instagram_icon:hover {
+  color: #ba2e35 !important;
+  cursor: pointer;
+}
+
+.more_about_nmp:hover {
+  color: #199f12;
+  cursor: pointer;
+}
+
+/* ########################################################################### More About Page ############################################################### */
+
+.about_page {
+  text-align: center;
+  background-color: wheat;
+  height: 100dvh;
+}
+
+.about_page_content_container {
+  padding: 3rem 0;
+}
+
+.about_page h1 {
+  font-family: "Bebas Neue";
+  font-size: 7rem;
+}
+
+.about_page h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+.about_page h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+}
+
+.about_page p {
+  font-size: 2rem;
+  width: 70%;
+  font-family: "Ubuntu";
+  margin: 4rem auto;
+}
+
+.nav_container_background {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ########################################################################### CONTACT PAGE ############################################################### */
+
+.contact_page_content_container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85dvh;
+}
+
+.contact_page_content_container h1 {
+  font-size: 3.3rem;
+  padding: 3rem;
+  font-family: "Montserrat";
+  min-width: 70%;
+  text-align: center;
+}
+
+.contact_page_content_container button {
+  background-color: #199f12;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  font-family: "Verdana";
+  color: white;
+  border: none;
+  transition: 0.4s ease;
+}
+
+.contact_page_content_container button:hover {
+  background-color: #38d42f;
+  translate: 1px -1px;
+  cursor: pointer;
+}
+
+/* ###########################################################################  JOIN PAGE ############################################################### */
+
+.join_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+}
+
+.join_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: whitesmoke;
+}
+
+.join_heading {
+  margin: 2rem;
+}
+
+.join_container h1 {
+  font-size: 4rem;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.join_container p {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+.join_container form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.join_container form input {
+  width: 100%;
+  margin: 0.2rem 0;
+  padding: 0.7rem 1rem;
+}
+
+.join_container form button {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.4s ease;
+}
+
+.join_container form button:hover {
+  background-color: rgb(49, 118, 40);
+  cursor: pointer;
+}
+
+/* ########################################################################### GALLERY SECTION ############################################################### */
+
+.gallery_container {
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.gallery_heading {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 50%;
+}
+
+.gallery_heading h1 {
+  font-size: 6rem;
+  font-family: "Ubuntu";
+  padding-bottom: 1rem;
+}
+
+.gallery_heading p {
+  font-size: 1.7rem;
+  font-family: "Montserrat";
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin: 0 1rem;
+  height: 100%;
+}
+
+.dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.gallery_img {
+  width: 100%;
+  margin: 0.1rem 0;
+  border-radius: 3px;
+}
+
+/* ########################################################################### MEDIA QUERIES ############################################################### */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  .burger_button {
+    display: flex;
+    align-items: center;
+  }
+  .nav_links {
+    display: none;
+  }
+  .right_section {
+    display: block;
+    width: 100%;
+  }
+  .left_section {
+    display: block;
+  }
+
+  .join_container form {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 675px) {
+  html {
+    font-size: 50%;
+  }
+  .carousel_content_container {
+    display: block;
+  }
+  .transformation_img_container {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+  .service_card {
+    width: 80%;
+    margin: 3rem;
+    padding: 2rem 0;
+  }
+  .right_section {
+    width: 40%;
+  }
+  .contact_content_container {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .right_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .right_section input {
+    width: 100%;
+  }
+
+  .item4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about_terms {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .left_person,
+  .right_person {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 59%;
+  }
+  .item1,
+  .item2,
+  .item3 {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .item4 {
+    height: 40%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 63.3%;
+  }
+}
