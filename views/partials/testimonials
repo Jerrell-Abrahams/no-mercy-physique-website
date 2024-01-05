@@ -1,0 +1,85 @@
+
+    <section>
+      <div class="testimonials_container">
+        <h1 class="our_work_title hidden">What People Say</h1>
+
+        <div class="our_work_container">
+          <!-- Slideshow container -->
+          <div class="slideshow-container slideOut delay_1">
+            <!-- Full-width images with number and caption text -->
+            <div class="testimonialsSlides fade">
+              <div class="testimonials_carousel_container">
+                <div class="carousel_content_container">
+                  <div class="testimonialsCarousel carousel_content">
+                    <h1>TESTIMONIALS</h1>
+                    <p class="hidden delay_2">
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- John Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonialsSlides fade">
+              <div class="carousel_container">
+                <div class="carousel_content_container">
+                  <div class="carousel_content">
+                    <!-- <img class="nmp_logo" src="../images/NMP transparent.png" /> -->
+                    <h1>TESTIMONIALS</h1>
+                    <p>
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- Johnny Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonialsSlides fade">
+              <div class="carousel_container">
+                <div class="carousel_content_container">
+                  <div class="carousel_content">
+                    <h1>TESTIMONIALS</h1>
+                    <p>
+                      Here at Bored Panda, we decided to compile a list of
+                      people who bulked up big-time and barely look like the
+                      same people in their 'before' photos, from women fitness
+                      maniacs to guys who have managed to get ripped using no
+                      exercise equipment at all. We've also included the
+                      timespan of their progress, but keep in mind that everyone
+                      builds at a different pace!
+                    </p>
+                    <h1>- Jane Doe</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="testimonialsPlusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="testimonialsPlusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
